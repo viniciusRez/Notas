@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		A17C541F29671DCD0046F84E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17C541E29671DCD0046F84E /* AppDelegate.swift */; };
 		A17C542129671DCD0046F84E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17C542029671DCD0046F84E /* SceneDelegate.swift */; };
-		A17C542329671DCD0046F84E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17C542229671DCD0046F84E /* ViewController.swift */; };
 		A17C542629671DCD0046F84E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A17C542429671DCD0046F84E /* Main.storyboard */; };
 		A17C542929671DCD0046F84E /* Notas.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A17C542729671DCD0046F84E /* Notas.xcdatamodeld */; };
 		A17C542B29671DCE0046F84E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A17C542A29671DCE0046F84E /* Assets.xcassets */; };
@@ -17,6 +16,11 @@
 		A17C543929671DCE0046F84E /* NotasTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17C543829671DCE0046F84E /* NotasTests.swift */; };
 		A17C544329671DCE0046F84E /* NotasUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17C544229671DCE0046F84E /* NotasUITests.swift */; };
 		A17C544529671DCE0046F84E /* NotasUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17C544429671DCE0046F84E /* NotasUITestsLaunchTests.swift */; };
+		A17C5452296720120046F84E /* NotasViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17C5451296720120046F84E /* NotasViewModel.swift */; };
+		A17C54562967252F0046F84E /* NotaModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17C54552967252E0046F84E /* NotaModel.swift */; };
+		A17C545829684F0D0046F84E /* ListarNotasTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17C545729684F0D0046F84E /* ListarNotasTableViewController.swift */; };
+		A17C545A29684F480046F84E /* NotasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17C545929684F480046F84E /* NotasViewController.swift */; };
+		A17C545C29685C360046F84E /* ListarNotasModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17C545B29685C360046F84E /* ListarNotasModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +44,6 @@
 		A17C541B29671DCD0046F84E /* Notas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Notas.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A17C541E29671DCD0046F84E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A17C542029671DCD0046F84E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A17C542229671DCD0046F84E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A17C542529671DCD0046F84E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A17C542829671DCD0046F84E /* Notas.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Notas.xcdatamodel; sourceTree = "<group>"; };
 		A17C542A29671DCE0046F84E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -51,6 +54,11 @@
 		A17C543E29671DCE0046F84E /* NotasUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NotasUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A17C544229671DCE0046F84E /* NotasUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotasUITests.swift; sourceTree = "<group>"; };
 		A17C544429671DCE0046F84E /* NotasUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotasUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A17C5451296720120046F84E /* NotasViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotasViewModel.swift; sourceTree = "<group>"; };
+		A17C54552967252E0046F84E /* NotaModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotaModel.swift; sourceTree = "<group>"; };
+		A17C545729684F0D0046F84E /* ListarNotasTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListarNotasTableViewController.swift; sourceTree = "<group>"; };
+		A17C545929684F480046F84E /* NotasViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotasViewController.swift; sourceTree = "<group>"; };
+		A17C545B29685C360046F84E /* ListarNotasModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListarNotasModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,12 +111,16 @@
 			children = (
 				A17C541E29671DCD0046F84E /* AppDelegate.swift */,
 				A17C542029671DCD0046F84E /* SceneDelegate.swift */,
-				A17C542229671DCD0046F84E /* ViewController.swift */,
 				A17C542429671DCD0046F84E /* Main.storyboard */,
 				A17C542A29671DCE0046F84E /* Assets.xcassets */,
 				A17C542C29671DCE0046F84E /* LaunchScreen.storyboard */,
 				A17C542F29671DCE0046F84E /* Info.plist */,
 				A17C542729671DCD0046F84E /* Notas.xcdatamodeld */,
+				A17C5451296720120046F84E /* NotasViewModel.swift */,
+				A17C54552967252E0046F84E /* NotaModel.swift */,
+				A17C545729684F0D0046F84E /* ListarNotasTableViewController.swift */,
+				A17C545929684F480046F84E /* NotasViewController.swift */,
+				A17C545B29685C360046F84E /* ListarNotasModel.swift */,
 			);
 			path = Notas;
 			sourceTree = "<group>";
@@ -261,10 +273,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A17C542329671DCD0046F84E /* ViewController.swift in Sources */,
+				A17C54562967252F0046F84E /* NotaModel.swift in Sources */,
+				A17C5452296720120046F84E /* NotasViewModel.swift in Sources */,
+				A17C545829684F0D0046F84E /* ListarNotasTableViewController.swift in Sources */,
 				A17C541F29671DCD0046F84E /* AppDelegate.swift in Sources */,
+				A17C545C29685C360046F84E /* ListarNotasModel.swift in Sources */,
 				A17C542129671DCD0046F84E /* SceneDelegate.swift in Sources */,
 				A17C542929671DCD0046F84E /* Notas.xcdatamodeld in Sources */,
+				A17C545A29684F480046F84E /* NotasViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
